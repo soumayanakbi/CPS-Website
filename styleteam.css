@@ -1,0 +1,179 @@
+/*-----------barre----------------*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+body{
+  font-family: "open Sans ", sans-serif;
+}
+
+#nav , .navig{
+  display: none;
+}
+
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+  transition: 0.5s ease;
+  background-color: #2d2a30;
+
+}
+
+
+.nav-barre li {
+  display: inline-block;
+  
+
+}
+.nav-barre li a {
+  
+  color:#fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0 10px;
+  letter-spacing: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  
+}
+.nav-barre li a:hover{
+  color: #d89f9f;
+
+}
+
+.active{
+  background: #2d2a30;
+}
+
+.active a:hover{
+  color: #fff ;
+
+}
+
+@media only screen and (max-width: 600px){
+  header{
+      display: block;
+  }
+  .logo{
+      margin-left: 15px;
+  }
+
+  .navig{
+      display: block;
+      position: absolute;
+      cursor: pointer;
+      margin: 0 1rem;
+      top: 20px;
+      right: 0;
+
+  }
+
+
+  .close,
+      input[type='checkbox']{
+          display: none;
+      }
+
+  
+
+  .nav-barre li {
+      display: none;
+      margin: 12px 0;
+      align-items: center;
+      
+      
+  }
+
+  #nav:checked ~ ul.nav-barre li{
+      display: block;
+
+  }
+
+  #nav:checked ~ label.navig .open {
+      display: none;
+  }
+  #nav:checked ~ label.navig .close {
+      display: block;
+  }
+
+  .title h3{
+      font-size: 40px;
+  }
+
+
+}
+
+
+
+/* team members */
+
+.cc h1{
+  color:black;
+  font-size: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  align-items: center;
+}
+.team{
+  width: 100%;
+}
+
+.colone {
+  float: left;
+  width: 25%;
+  margin-bottom: 40px;
+  padding: 0 8px;
+  margin-left: 16%;
+  
+}
+.container::after, .ligne::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 800px) {
+  .colone{
+    width: 100%;
+    display: block;
+    margin: 10px 10px;
+  }
+}
+.milieu{
+  margin-left: 37.5%;
+  float:inline-start;
+  width:25%;
+  margin-bottom: 40px;
+  margin-left: 37.5%;
+} 
+@media screen and (max-width: 800px) {
+  .milieu{
+    width: 100%;
+    display: block;
+    margin: 10px 10px;
+  }
+}
+.carte {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff2f1;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.cc p{
+  color: rgb(91, 91, 91);
+}
+  
+.cc{
+  background-color: #fff;
+  
+}

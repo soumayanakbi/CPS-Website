@@ -1,0 +1,250 @@
+/*-----------barre----------------*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+body{
+  font-family: "open Sans ", sans-serif;
+}
+
+#nav , .navig{
+  display: none;
+}
+
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+  transition: 0.5s ease;
+  background-color: #2d2a30;
+
+}
+
+
+.nav-barre li {
+  display: inline-block;
+  
+
+}
+.nav-barre li a {
+  
+  color:#fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0 10px;
+  letter-spacing: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  
+}
+.nav-barre li a:hover{
+  color: #d89f9f;
+
+}
+
+.active{
+  background: #2d2a30;
+}
+
+.active a:hover{
+  color: #fff ;
+
+}
+
+@media only screen and (max-width: 600px){
+  header{
+      display: block;
+  }
+  .logo{
+      margin-left: 15px;
+  }
+
+  .navig{
+      display: block;
+      position: absolute;
+      cursor: pointer;
+      margin: 0 1rem;
+      top: 20px;
+      right: 0;
+
+  }
+
+
+  .close,
+      input[type='checkbox']{
+          display: none;
+      }
+
+  
+
+  .nav-barre li {
+      display: none;
+      margin: 12px 0;
+      align-items: center;
+      
+      
+  }
+
+  #nav:checked ~ ul.nav-barre li{
+      display: block;
+
+  }
+
+  #nav:checked ~ label.navig .open {
+      display: none;
+  }
+  #nav:checked ~ label.navig .close {
+      display: block;
+  }
+
+  .title h3{
+      font-size: 40px;
+  }
+
+
+}
+
+
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/************************************** Contact **********************************************/
+.contact {
+  
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 125px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.6)) , url('contact.jpg');
+}
+.contact h1 {
+  color: white;
+  text-align: center;
+}
+.contactcontanner {
+  
+  width: 70%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.contactcontanner .contanner {
+  width: 30%;
+}
+.contactcontanner .contanner .heading {
+  
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 2px solid white;
+  margin-bottom: 8px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,.07);
+}
+.heading .icon {
+  padding: 0 0 0 20px;
+  font-size: 20px;
+  color: rgb(3, 180, 3);
+}
+.heading .info {
+  width: 70%;
+  margin: 25px auto;
+  color: white;
+}
+.heading .info #contactinfo {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+/* message form */
+.messageform {
+  width: 70%;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 8px rgba(0,0,0,.07);
+  margin-left: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.messageform .form {
+  width: 80%;
+  margin: 50px auto;
+}
+.messageform input , .messageform #inputbox {
+  width: 100%;
+  color: white;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid white;
+  outline: none;
+  background-color: transparent;
+}
+.messageform button {
+  padding: 10px 50px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: white;
+  letter-spacing: 1px;
+  background: linear-gradient(to right , transparent 50% , rgb(3, 180, 3) 50%);
+  background-size: 200%;
+  background-position: left;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: .3s;
+}
+.messageform button:hover {
+  background-position: right;
+}
+
+/* contact mobile view */ 
+@media only screen and (max-width : 700px) {
+  .contact {
+      padding: 50px 0;
+  }
+  .contactcontanner {
+      width: 95%;
+      display: block;
+  }
+  .contactcontanner .contanner {
+      width: 100%;
+  }
+  /* message form */
+  .messageform {
+      width: 100%;
+      margin-left: 0px;
+      padding: 1px 0;
+  }
+  .messageform .form {
+      width: 93%;
+      margin: 50px auto;
+  }
+}
+
+#msg{
+  font-size: 20px;
+  color: green;
+  animation: buttons .3s linear;
+}
+
+#erreur{
+  font-size: 20px;
+  color: red;
+  animation: buttons .3s linear;
+  
+}

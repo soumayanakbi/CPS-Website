@@ -1,0 +1,253 @@
+/*-----------barre----------------*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+body{
+  font-family: "open Sans ", sans-serif;
+}
+
+#nav , .navig{
+  display: none;
+}
+
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+  transition: 0.5s ease;
+  background-color: #2d2a30;
+
+}
+
+
+.nav-barre li {
+  display: inline-block;
+  
+
+}
+.nav-barre li a {
+  
+  color:#fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0 10px;
+  letter-spacing: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  
+}
+.nav-barre li a:hover{
+  color: #d89f9f;
+
+}
+
+.active{
+  background: #2d2a30;
+}
+
+.active a:hover{
+  color: #fff ;
+
+}
+
+@media only screen and (max-width: 600px){
+  header{
+      display: block;
+  }
+  .logo{
+      margin-left: 15px;
+  }
+
+  .navig{
+      display: block;
+      position: absolute;
+      cursor: pointer;
+      margin: 0 1rem;
+      top: 20px;
+      right: 0;
+
+  }
+
+
+  .close,
+      input[type='checkbox']{
+          display: none;
+      }
+
+  
+
+  .nav-barre li {
+      display: none;
+      margin: 12px 0;
+      align-items: center;
+      
+      
+  }
+
+  #nav:checked ~ ul.nav-barre li{
+      display: block;
+
+  }
+
+  #nav:checked ~ label.navig .open {
+      display: none;
+  }
+  #nav:checked ~ label.navig .close {
+      display: block;
+  }
+
+  .title h3{
+      font-size: 40px;
+  }
+
+
+}
+
+/*-----------get-involved----------------*/
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #fefefe;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 50px auto;
+  }
+  .heading h1 {
+    font-weight: 800;
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  
+  .heading p{
+    font-weight: 500;
+    font-size: 30px;
+    color: black;
+    margin-left: 100px;
+}
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  .ways .button{
+                
+    width: 450px;
+     max-width: 150px;
+     height: 50px;
+     font-weight: 700;
+     font-size: 15px;
+     background: white;
+     border: rgba(48, 48, 48, 0.5) solid 2px;
+     border-radius: 70px;
+     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+     color: #303030;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+                 
+  }
+ 
+  .button:hover{
+     background: #7a7373;
+     transition: 0.5s;
+
+ }
+  .card {
+    width: 20%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+  }
+  
+  .card-header {
+    text-align: center;
+    padding: 50px 10px;
+    background: linear-gradient(to right, #f78a86, #ed3a3a);
+    color: #fff;
+  }
+  
+  .card-body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .card-body p{
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  .card-body .btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .card {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .container {
+      width: 100%;
+    }
+  
+    .heading {
+      padding: 20px;
+      font-size: 20px;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
